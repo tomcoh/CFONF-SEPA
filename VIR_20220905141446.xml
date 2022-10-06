@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="Utf-8" standalone="no"?>
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MESS2022-09-05T14:16:29</MsgId>
+			<CreDtTm>2022-09-05T14:16:29</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>132.00</CtrlSum>
+			<InitgPty>
+				<Nm>PAIE</Nm>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>VIR/2022-09-05T14:16:28/1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>132.00</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-09-05</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAIE</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FR7611315000010800119918639</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>CEPAFRPP131</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-05T14:16:28/1/1</InstrId>
+					<EndToEndId>VIR PAIE AOUT MICROENTR 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">132</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CEPAFRPP831</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>TORINI LAURENT</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7618315100000432207396156</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT MICROENTR 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

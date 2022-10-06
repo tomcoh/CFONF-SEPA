@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEPA</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="test.js"></script>
+    <!-- <script type="text/javascript" src="test3.js"></script>     -->
+    <style>
+        .txt {
+            width: 100%;
+            height: 250px;
+        }
+
+        #downloadlink:link,
+        #downloadlink:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        #downloadlink:hover,
+        #downloadlink:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="file" id="input" onChange="contentInit()" /><br>
+    <h2>Prévisualisation :</h2>
+    <textarea type="text" size="2350" id="output" class="txt" value=""></textarea>
+    <a id="downloadlink" download="vide.txt" href="data:text/plain;charset=utf-8,Erreur">Télécharger le fichier modifié</a>
+</body>
+
+</html>

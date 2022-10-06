@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="Utf-8" standalone="no"?>
+<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CstmrCdtTrfInitn>
+		<GrpHdr>
+			<MsgId>MESS2022-09-02T11:40:19</MsgId>
+			<CreDtTm>2022-09-02T11:40:19</CreDtTm>
+			<NbOfTxs>11</NbOfTxs>
+			<CtrlSum>2316.50</CtrlSum>
+			<InitgPty>
+				<Nm>PAIE</Nm>
+			</InitgPty>
+		</GrpHdr>
+		<PmtInf>
+			<PmtInfId>VIR/2022-09-02T11:40:19/1</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<NbOfTxs>11</NbOfTxs>
+			<CtrlSum>2316.50</CtrlSum>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>2022-09-02</ReqdExctnDt>
+			<Dbtr>
+				<Nm>PAIE</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>FR7611315000010800119918639</IBAN>
+				</Id>
+				<Ccy>EUR</Ccy>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<BIC>CEPAFRPP131</BIC>
+				</FinInstnId>
+			</DbtrAgt>
+			<ChrgBr>SLEV</ChrgBr>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/1</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">315</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CMCIFR2AXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>BAKADIR YOUSSRA</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7610278054540002079600389</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/2</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">90</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>AGRIFRPP878</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>BAUDRON ELSA</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7617806003050414475661059</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/3</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">300</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CCBPFRPPNAN</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>GALVEZ COLIN</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7613807005526111962558874</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/4</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">245</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>PSSTFRPPPAR</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>GUILLERMONT VIRGINIE LAU</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7120041010071196224S03853</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/5</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">135</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>SOGEFRPP</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>JAUB SEVERINE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7630003020960005042483827</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/6</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">300</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>BNPAFRPPXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>MLE SANDRINE JEAN</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7630004001960000013078825</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/7</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">90</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>AGRIFRPP878</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>LAIK MARLENE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7617806000551609209800044</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/8</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">207</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CEPAFRPP627</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>LECHELECHE NORA</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7616275003000402362577558</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/9</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">69</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CEPAFRPP444</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>LEPROUX NGABO AUDREY</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7614445004000466172228946</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/10</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">168</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>CMCIFRPPXXX</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>BONNIN MURIELLE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7630087337050002021540265</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>VIR/2022-09-02T11:40:19/1/11</InstrId>
+					<EndToEndId>VIR PAIE AOUT P1 2022</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">397.5</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>FPELFR21</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>VERDIN MARTIAL</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>FR7616598000010219435000185</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>VIR PAIE AOUT P1 2022</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>
