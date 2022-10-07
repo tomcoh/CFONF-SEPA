@@ -1,3 +1,0 @@
-0302        000000       05092PAIE                                              E     0000108001199186                                               11315      
-0602        00000017468       TORINI LAURENT          CAISSE D EPARGNE COTE D   E     10000043220739610000000000013200VIR PAIE AOUT MICROENTR 2022   18315      
-0802        000000                                                              E                     0000000000013200                                          
