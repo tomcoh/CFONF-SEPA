@@ -294,7 +294,7 @@ const contentInit = function(){
             partfinal += partXML(finalDate, id, amount, bic, name, iban);
             sum += amount;
           }
-          final = startXML(finalDate,sum,gwithoutTime);
+          final = startXML(gfinalDate,sum,gwithoutTime);
           final += partfinal;
           final += endXML();
         }
