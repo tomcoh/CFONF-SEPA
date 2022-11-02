@@ -23,6 +23,9 @@ function finalToShow(fileContent) {
     let numero_compte = fileContent.match(/(?<=^.{91})(.{11})/)[0];
     console.log('numero compte : ' + numero_compte);
     let bic = fileContent.match(/(?<=^.{54})(.{11})/)[0];
+    if (bic.slice(-3) == '   ') {
+      bic = bic.match(/.{8}/)[0];
+    }
     console.log('bic : ' + bic);
     let rib;
     let parsedAmount = fileContent.match(/(?<=^.{102})([0-9]{16})/)[0];
