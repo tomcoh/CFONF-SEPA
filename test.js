@@ -157,7 +157,7 @@ function startXML(finalDate, amount, withoutTime) {
     final += '\n';
     final += '\t\t\t<NbOfTxs>1</NbOfTxs>';
     final += '\n';
-    final += '\t\t\t<CtrlSum>' + amount + '</CtrlSum>';
+    final += '\t\t\t<CtrlSum>' + amount.toFixed(2) + '</CtrlSum>';
     final += '\n';
     final += '\t\t\t<InitgPty>';
     final += '\n';
@@ -177,7 +177,7 @@ function startXML(finalDate, amount, withoutTime) {
     final += '\n';
     final += '\t\t\t<NbOfTxs>1</NbOfTxs>'
     final += '\n';
-    final += '\t\t\t<CtrlSum>' + amount + '</CtrlSum>';
+    final += '\t\t\t<CtrlSum>' + amount.toFixed(2) + '</CtrlSum>';
     final += '\n';
     final += '\t\t\t<PmtTpInf>';
     final += '\n';
@@ -292,7 +292,9 @@ const contentInit = function(){
             let iban = returnData[5];
             let withoutTime = returnData[6];
             partfinal += partXML(finalDate, id, amount, bic, name, iban);
-            sum += amount;
+            toadd = +amount;
+            sum = sum + toadd;
+            console.log(sum);
           }
           final = startXML(gfinalDate,sum,gwithoutTime);
           final += partfinal;
