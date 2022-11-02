@@ -145,7 +145,7 @@ function finalToShow(fileContent) {
   }
 
 //XML creation
-function startXML(finalDate, amount, withoutTime) {
+function startXML(finalDate, amount, withoutTime, nboftxs) {
     let final = '<?xml version="1.0" encoding="Utf-8" standalone="no"?>';
     final += '\n';
     final += '<Document xsi:schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd" xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">';
@@ -158,7 +158,7 @@ function startXML(finalDate, amount, withoutTime) {
     final += '\n';
     final += '\t\t\t<CreDtTm>' + finalDate + '</CreDtTm>';
     final += '\n';
-    final += '\t\t\t<NbOfTxs>1</NbOfTxs>';
+    final += '\t\t\t<NbOfTxs>' + nboftxs + '</NbOfTxs>';
     final += '\n';
     final += '\t\t\t<CtrlSum>' + amount.toFixed(2) + '</CtrlSum>';
     final += '\n';
@@ -178,7 +178,7 @@ function startXML(finalDate, amount, withoutTime) {
     final += '\n';
     final += '\t\t\t<BtchBookg>true</BtchBookg>'
     final += '\n';
-    final += '\t\t\t<NbOfTxs>1</NbOfTxs>'
+    final += '\t\t\t<NbOfTxs>' + nboftxs + '</NbOfTxs>'
     final += '\n';
     final += '\t\t\t<CtrlSum>' + amount.toFixed(2) + '</CtrlSum>';
     final += '\n';
@@ -273,7 +273,7 @@ const contentInit = function(){
           let iban = returnData[5];
           console.log('partiban ' + iban);
           let withoutTime = returnData[6];
-          final = startXML(finalDate,amount,withoutTime);
+          final = startXML(finalDate,amount,withoutTime, 1);
           final += partXML(finalDate, id, amount, bic, name, iban);
           final += endXML();
         }
@@ -283,6 +283,7 @@ const contentInit = function(){
           let partfinal = '';
           var sum = 0;
           let lines = content.split('\n');
+          var nboftxs = numberOfLines - 3;
           for (var i=1; i < (numberOfLines - 2); i++) {
             let line = lines[i];
             console.log(i + ' ' + line);
@@ -299,7 +300,7 @@ const contentInit = function(){
             sum = sum + toadd;
             console.log(sum);
           }
-          final = startXML(gfinalDate,sum,gwithoutTime);
+          final = startXML(gfinalDate,sum,gwithoutTime, nboftxs);
           final += partfinal;
           final += endXML();
         }
