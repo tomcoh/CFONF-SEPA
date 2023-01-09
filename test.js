@@ -104,7 +104,7 @@ function finalToShow(fileContent) {
     part += '\n';
     part += '\t\t\t\t<Amt>';
     part += '\n';
-    part += '\t\t\t\t\t<InstdAmt Ccy="EUR">' + amount + '</InstdAmt>';
+    part += '\t\t\t\t\t<InstdAmt Ccy="EUR">' + amount.toFixed(2) + '</InstdAmt>';
     part += '\n';
     part += '\t\t\t\t</Amt>';
     part += '\n';
