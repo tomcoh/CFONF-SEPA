@@ -82,7 +82,7 @@ function finalToShow(fileContent) {
     // document.getElementById("output").innerHTML = final;
     // document.getElementById("downloadlink").href = 'data:text/xml;charset=utf-8,' + encodeURIComponent(final);
     // document.getElementById("downloadlink").download = `SEPA-${name.toLowerCase()}.xml`;
-    return [finalDate, id, amount, bic, name, iban, withoutTime];
+    return [finalDate, id, Number(amount), bic, name, iban, withoutTime];
   }
 
   function showAndDl(final,name) {
@@ -267,7 +267,7 @@ const contentInit = function(){
           console.log(returnData);
           let finalDate = returnData[0];
           let id = returnData[1];
-          let amount = Number(returnData[2]);
+          let amount = returnData[2];
           let bic = returnData[3];
           let name = returnData[4];
           let iban = returnData[5];
