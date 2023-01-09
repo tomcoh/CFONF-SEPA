@@ -267,7 +267,7 @@ const contentInit = function(){
           console.log(returnData);
           let finalDate = returnData[0];
           let id = returnData[1];
-          let amount = returnData[2];
+          let amount = Number(returnData[2]);
           let bic = returnData[3];
           let name = returnData[4];
           let iban = returnData[5];
